@@ -6,6 +6,6 @@ class PaletteLightMode {
   static const Color lightBlackColor = Color(0xFFA7ADB1); 
   static const Color blueColor = Color(0xFF0056FF);
   static const Color primaryRedColor = Color(0xFFCC0025);
-  static const Color errorColor = Color(0xFFAE0000);
+  static const Color errorColor = Color.fromARGB(251, 240, 16, 16);
   static const Color transparentColor = Color(0x00000000);
 }
