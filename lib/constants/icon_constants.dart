@@ -4,4 +4,5 @@ class IconConstants {
   static const String lockIcon = '$_svgPath/lock-icon.svg';
   static const String eyeCloseIcon = '$_svgPath/eye-close-icon.svg';
   static const String eyeOpenIcon = '$_svgPath/eye-open-icon.svg';
+  static const String addPlusIcon = '$_svgPath/add-plus.svg';
   }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gallery_ui/constants/icon_constants.dart';
 import 'package:flutter_gallery_ui/theme/theme.dart';
+import 'package:flutter_gallery_ui/ui/image_gallery_page.dart';
 import 'package:flutter_gallery_ui/widgets/auth_field.dart';
 import 'package:flutter_gallery_ui/widgets/button.dart';
 
@@ -112,7 +113,7 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ),
                   const SizedBox(height: 30),
-                  // Added row 2 - Sign In Container
+                  //  Button
                   Align(
                     alignment: Alignment.center,
                     child: Button(
@@ -120,6 +121,12 @@ class _LoginPageState extends State<LoginPage> {
                       buttonHeight: 40,
                       onPressed: () {
                         logInUser();
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const ImageGalleryPage(),
+                          ),
+                        );
                       },
                       lable: "Sign In",
                       backgroundColor: PaletteLightMode.darkBlackColor,
